@@ -5,32 +5,32 @@ const navBar = {
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  gradientColors: "#4484ce, #1ad7c0",
+  firstName: "Mathew",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "Pellarin",
+  message: " Driven to reshape the world one innovation at a time. ",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
-    },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
+      url: "https://github.com/Matp101",
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/mathewpellarin/",
     },
     {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      image: "fa-facebook",
+      url: "https://www.facebook.com/mathew.pellarin",
     },
+    {
+      image: "fa-instagram",
+      url: "https://www.instagram.com/matp101/",
+    },
+//    {
+//      image: "fa-twitter",
+//      url: "https://www.twitter.com/matp101/",
+//    },
   ],
 };
 
@@ -51,11 +51,12 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/mathewpellarin.png"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    "My name is Mathew Pellarin. I’m a undergraduate at the University of Windsor with a degree in Computer Science. I am a passionate embedded systems enthusiast with a knack for programming solutions that simplify everyday life. I have a diverse interest in technology, and I am always looking for new opportunities to learn and grow.",
+  resume: "https://github.com/Matp101",
+  //resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
 };
 
 // PROJECTS SECTION
@@ -66,12 +67,14 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
+  gitHubUsername: "matp101",
   reposLength: 4,
   specificRepos: [],
 };
 
+
 // Leadership SECTION
+/*
 const leadership = {
   show: false,
   heading: "Leadership",
@@ -94,30 +97,31 @@ const leadership = {
     height:"450"
   }
 };
+*/
 
 // SKILLS SECTION
 const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
+    { name: "C/C++", value: 90 },
+    { name: "Python", value: 80 },
     { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "SQL", value: 60 },
+    { name: "Machine Learning", value: 85 },
+    //{ name: "Rust", value: 65 },
+    { name: "HTML/CSS", value: 60 },
+    //{ name: "C#", value: 80 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
+    { name: "Creativity", value: 90 },
     { name: "Positivity", value: 75 },
     { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
+    //{ name: "Problem Solving", value: 75 },
+    //{ name: "Empathy", value: 90 },
     { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+    { name: "Collaboration", value: 90 },
   ],
 };
 
@@ -126,8 +130,10 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+//CHANGE ME
+  //    "I'm currently looking for part-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+    "I'm currently looking for part-time Software Development or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+  email: "mathewpellarin@hotmail.com",
 };
 
 const experiences = {
@@ -135,14 +141,19 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'TPT',
+      companylogo: require('../assets/img/ford.png'),
+      date: 'May 2017 – May 2018',
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Technology Associate',
+      companylogo: require('../assets/img/staples.png'),
+      date: 'March 2017 – January 2023',
+    },
+    {
+      role: 'Teaching Assisatant',
+      companylogo: require('../assets/img/uwin.png'),
+      date: 'Sept 2021 – July 2022',
     },
   ]
 }

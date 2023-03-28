@@ -16,7 +16,7 @@
 
 [![Site preview](/public/social-image.png)](https://hashirshoaeb.github.io/home)
 -->
-
+<!--
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -221,3 +221,4 @@ This project has been archived. Means that it is no longer actively maintained b
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/hashirshoaeb/home.svg)](https://starchart.cc/hashirshoaeb/home)
+-->
