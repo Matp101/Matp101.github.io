@@ -720,6 +720,13 @@ body {
     padding-bottom: 3rem;
 }
 
+.skillstext {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.25rem;
+}
+
 .aboutmeheader {
     font-size: 3rem;
     line-height: 1.2;
@@ -729,6 +736,13 @@ body {
 .skillscontainer {
     display: flex;
     flex-wrap: wrap;
+}
+
+.experiencecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .languageskills {
@@ -745,6 +759,28 @@ body {
     font-size: 2rem;
     line-height: 1.1;
     font-weight: 200;
+}
+
+.workheader {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+.eduheader{
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 200;
+}
+
+.edudetail {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin: 2px;
 }
 
 .work {
@@ -782,3 +818,26 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+table {
+    width: 100% ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+}
+
+td {
+    border-style: groove;
+    border-color: #ddd;
+    height: 250px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+hr {
+    min-height: 100%;
+    max-height: 100vh;
+    margin: 0;
+  }
