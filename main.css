@@ -869,6 +869,19 @@ img.work {
     animation: bounce 2s infinite;
 }
 
+@media (max-height: 650px) and (min-width: 767px) {
+    .for-more {
+        visibility: hidden;
+    }
+}
+
+@media (max-height: 550px) and (max-width: 766px) {
+    .for-more {
+        visibility: hidden;
+    }
+}
+
+
 .scroll {
     display: inline-block;
 }
