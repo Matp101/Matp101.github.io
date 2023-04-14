@@ -845,11 +845,20 @@ hr {
     position: relative;
     animation: bounce 0.5s infinite alternate;
 }
+/* 
+img.work {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+} */
 
 
 .for-more {
     position: fixed;
-    bottom: 10px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     /* background-color: #666; */
