@@ -1,0 +1,46 @@
+.fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: "Font Awesome 5 Brands";
+}
+
+.fa-3x {
+    font-size: 3em;
+}
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-github:before {
+    content: "\f09b";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.fa-linkedin:before {
+    content: "\f08c";
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.socialicons {
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 0.8s;
+    margin: 4px;
+}
+
+.socialicons:hover {
+    color: #000;
+}
