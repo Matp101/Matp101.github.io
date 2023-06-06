@@ -18,21 +18,22 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="js/barset/css/style.css">
 	<link rel="stylesheet" href="js/barset/js/skillset.css">
-	<script src="js/barset/js/skillset.js"></script>
 </head>
 
 <body>
 	<noscript class=sf-hidden>You need to enable JavaScript to run this app!</noscript>
+
+	<div style="overflow:hidden;background:rgba(0,0,0,0) linear-gradient(36deg,rgb(26,215,192), rgb(255, 241, 46),rgb(68,132,206), rgb(128, 37, 220), rgb(200, 200, 200)) repeat scroll 0% 0% / 1200% 1200%">
+
 	<nav>
-        <a href="#aboutme">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+		<a href="#aboutme">About Me</a>
+		<a href="#experience">Experience</a>
+		<a href="#contact">Contact</a>
 	</nav>
-	
 	<div id=home
 		class="title bg-transparent bgstyle text-light maintext flex-wrap"
-		style="overflow:hidden;background:rgba(0,0,0,0) linear-gradient(36deg,rgb(26,215,192), rgb(255, 241, 46),rgb(68,132,206), rgb(128, 37, 220), rgb(200, 200, 200)) repeat scroll 0% 0% / 1200% 1200%">
+		style="overflow:hidden;">
+
 		<div id=stars></div>
 		<div class="container text-center">
 			<h1 class=display-1>Mathew Pellarin</h1>
@@ -65,6 +66,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 
 	<div id="aboutme" class="aboutme">
 		<div id=aboutme class="container text-center">
@@ -90,108 +92,6 @@
 		<div id="github-projects"></div>
 	</div>
 	-->
-	<!-- -->
-	<div id="skills" class="skills text-center">
-		<h2>Skills</h2>
-		<div class="wraper container">
-			<div class="skillscontainer">
-				<h3>Language Skills</h3>
-				<div id="langskillset" class="column"> </div>
-			</div>
-			<div class="skillscontainer">
-				<h3>Soft Skills</h3>
-				<div id="softskillset" class="column"> </div>
-			</div>
-		</div>
-	</div>
-	<script>
-		$(document).ready(function () {
-			$("#langskillset").skillset({
-				object: object = [
-					{
-						'headline': 'C/C++',
-						'value': 19,
-						'length': 20,
-						'description': 'Extensive knowledge and experience with low-level programming, memory management, and system-level applications.'
-					},
-					{
-						'headline': 'Python',
-						'value': 17,
-						'length': 20,
-						'description': 'Experience in developing scripts, web applications and data analysis using Python. Familiar with both Python 2 and 3 versions.'
-					},
-					{
-						'headline': 'Machine Learning',
-						'value': 16,
-						'length': 20,
-						'description': 'Experience with machine learning algorithms and libraries. Proficient in creating predictive models and data analysis.'
-					},
-					{
-						'headline': 'SQL',
-						'value': 12,
-						'length': 20,
-						'description': 'Understanding of relational databases and experience with SQL queries, database design, and stored procedures.'
-					},
-					{
-						'headline': 'Data Structures',
-						'value': 16,
-						'length': 20,
-						'description': 'Solid knowledge of data structures such as arrays, linked lists, stacks, queues, trees, and graphs. Experience in algorithm optimization.'
-					},
-					{
-						'headline': 'HTML/CSS',
-						'value': 14,
-						'length': 20,
-						'description': 'Strong understanding and application of HTML and CSS. Capable of creating responsive and adaptive designs for web development.'
-					},
-				],
-				duration: 40
-			});
-
-			$("#softskillset").skillset({
-				object: object = [
-					{
-						'headline': 'Goal-Oriented',
-						'value': 18,
-						'length': 20,
-						'description': 'Proven ability to set, meet and exceed professional goals and targets within specified timelines.'
-					},
-					{
-						'headline': 'Creativity',
-						'value': 17,
-						'length': 20,
-						'description': 'Aptitude for thinking outside the box and coming up with innovative solutions to complex problems.'
-					},
-					{
-						'headline': 'Positivity',
-						'value': 18,
-						'length': 20,
-						'description': 'Known for maintaining a positive attitude and fostering a positive work environment, even in high-stress situations.'
-					},
-					{
-						'headline': 'Adaptability',
-						'value': 19,
-						'length': 20,
-						'description': 'Demonstrated ability to adapt to new environments, technologies, and situations quickly and effectively.'
-					},
-					{
-						'headline': 'Organization',
-						'value': 16,
-						'length': 20,
-						'description': 'Experience managing tasks and resources efficiently. Known for maintaining order and clarity in work processes.'
-					},
-					{
-						'headline': 'Collaboration',
-						'value': 17,
-						'length': 20,
-						'description': 'Strong team player with a history of successful collaborations on various projects.'
-					},
-				],
-				duration: 40
-			});
-		});
-	</script>
-
 	<!-- -->
 
 	<div id="experience" class="experience">
@@ -280,9 +180,6 @@
 			</p>
 		</div>
 	</div>
-	<script src="js/typewriter.js"></script>
-	<script src="js/bounce.js"></script>
-	<script src="js/scrollpage.js"></script>
 </body>
 
 </html>
