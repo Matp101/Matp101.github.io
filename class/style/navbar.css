@@ -15,7 +15,8 @@ nav a {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
-    border-radius: 0.3rem;display: inline-block;
+    border-radius: 0.3rem;
+    display: inline-block;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
@@ -25,4 +26,21 @@ nav a {
     background-color: transparent;
     border: 1px solid #ffffff;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    nav a {
+        margin-right: 15px;  
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1;
+        border-radius: 0.2rem;
+    }
+}
+
+
+
+nav a:hover {
+    color: #212529;
+    text-decoration: none;
 }
