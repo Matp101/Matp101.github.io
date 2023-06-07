@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="style/buttons.css">
 	<link rel="stylesheet" href="style/bouncebutton.css">
 	<link rel="stylesheet" href="style/navbar.css">
+	<link rel="stylesheet" href="style/skills.css">
 	<!--<link rel="icon" type="image/x-icon" href="images/favicon.ico">-->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="js/barset/css/style.css">
@@ -28,6 +29,7 @@
 		<nav>
 			<a href="#aboutme">About Me</a>
 			<a href="#projects">Projects</a>
+			<a href="#skills">Skills</a>
 			<a href="#experience">Experience</a>
 			<a href="#contact">Contact</a>
 		</nav>
@@ -89,49 +91,39 @@
 	<!-- -->
 
 	<section id="projects" class="container text-center">
-		<p>
-			Projects go here
-		</p>
+		<div id="project1">
+			<h3>Robotic Arm</h3>
+			<p>This robotic arm is a functional robot built using a Arduino Mega. It picks up a metal object when detected at the end of the conveyor belt and places it in a unloading spot.</p>
+			<a href="https://github.com/Matp101/RoboticArm/" style="color: blue;">More Information</a>
+		</div>
+		<div id="project2">
+			<h3>Smart Blinds</h3>
+			<p>Uses a Stepper motor to control your blinds to open and close with 3 buttons. This also connects to MQTT to allow intigration with Home Assisatant and other automation softwares.</p>
+			<a href="https://github.com/Matp101/SmartBlinds" style="color: blue;">More Information</a>
+		</div>
+		<div id="project3">
+			<h3>Car Cluster Cloner</h3>
+			<p>Clones 93xC6 chips to another. This EEPROM chip stores key data and odometer values.</p>
+			<a href="https://github.com/Matp101/Car-Cluster-Cloner" style="color: blue;">More Information</a>
+		</div>
+
 	</section>
-	<!-- -->
 	<!-- -->
 	<section id="skills" class="skills text-center">
 		<h2>Skills</h2>
 		<div class="wraper container">
 			<div class="skillscontainer">
 				<h3>Language Skills</h3>
-				<div id="langskillset" class="column"> </div>
-
-				<img alt="C Logo" src="images/CLogo.PNG" class="skillLogo" style="width:3%"/>
-				<div class="container">
-				  <div class="skillbar c">90%</div>
-				</div>
-				<hr>
-
-				<img alt="CPP Logo" src="images/CPPLogo.png" class="skillLogo" style="width:3%"/>
-				<div class="container">
-				  <div class="skillbar cpp">85%</div>
-				</div>
-				<hr>
-
-				<img alt="Python Logo" src="images/PythonLogo.PNG" class="skillLogo" style="width:3%"/>
-				<div class="container">
-				  <div class="skillbar python">85%</div>
-				</div>
-				<hr>
-		  
-		  
-				<img alt="ML Logo" src="images/MLLogo.PNG" class="skillLogo" style="width:3%"/>
-				<div class="container">
-				  <div class="skillbar ml">75%</div>
-				</div>
-				<hr>
-		  
-				<img alt="HTML Logo" src="images/HTMLLogo.PNG" class="skillLogo" style="width:3%"/>
-				<div class="container">
-				  <div class="skillbar css">60%</div>
-				</div>
-				<hr>
+				<img alt="C Logo" src="images/skills/C_Logo.png" class="skilllogo"/>
+				<div class="skillbar"  style="width: 90%">90%</div>
+				<img alt="CPP Logo" src="images/skills/CPP_Logo.png" class="skilllogo"/>
+				<div class="skillbar" style="width: 85%">85%</div>
+				<img alt="Python Logo" src="images/skills/Python_Logo.png" class="skilllogo"/>
+				<div class="skillbar" style="width: 85%">85%</div>
+				<img alt="ML Logo" src="images/skills/ML_Logo.png" class="skilllogo"/>
+				<div class="skillbar" style="width: 75%">75%</div>
+				<img alt="HTML Logo" src="images/skills/HTML_Logo.png" class="skilllogo"/>
+				<div class="skillbar" style="width: 60%">60%</div>
 			</div>
 		</div>
 	</section>

@@ -1,0 +1,14 @@
+.skillbar {
+  text-align: center;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  color: #ffffff;
+  border-radius: 2rem;
+  background-color: #808080;
+}
+
+.skilllogo {
+  width: 10%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+}
