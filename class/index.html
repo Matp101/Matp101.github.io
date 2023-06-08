@@ -15,17 +15,16 @@
 	<link rel="stylesheet" href="style/bouncebutton.css">
 	<link rel="stylesheet" href="style/navbar.css">
 	<link rel="stylesheet" href="style/skills.css">
-	<!--<link rel="icon" type="image/x-icon" href="images/favicon.ico">-->
+	<link rel="stylesheet" href="style/projects.css">
+	<link rel="stylesheet" href="style/experience.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="js/barset/css/style.css">
 	<link rel="stylesheet" href="js/barset/js/skillset.css">
 </head>
 
 <body>
-	<noscript class=sf-hidden>You need to enable JavaScript to run this app!</noscript>
-
-	<section style="overflow:hidden;background:rgba(0,0,0,0) linear-gradient(36deg,rgb(26,215,192), rgb(255, 241, 46),rgb(68,132,206), rgb(128, 37, 220), rgb(200, 200, 200)) repeat scroll 0% 0% / 1200% 1200%">
-
+	<section id="main"
+		style="overflow:hidden;background:rgba(0,0,0,0) linear-gradient(36deg,rgb(26,215,192), rgb(255, 241, 46),rgb(68,132,206), rgb(128, 37, 220), rgb(200, 200, 200)) repeat scroll 0% 0% / 1200% 1200%">
 		<nav>
 			<a href="#aboutme">About Me</a>
 			<a href="#projects">Projects</a>
@@ -33,80 +32,84 @@
 			<a href="#experience">Experience</a>
 			<a href="#contact">Contact</a>
 		</nav>
-		<div id=home
-			class="title bg-transparent bgstyle text-light maintext flex-wrap"
-			style="overflow:hidden;">
+		<div id=home class="title bg-transparent bgstyle text-light maintext flex-wrap" style="overflow:hidden;">
 
 			<div id=stars></div>
 			<div class="container text-center">
-			<h1 class=display-1>Mathew Pellarin</h1>
-			<div class="typisttext" id="typewriterText"
-				data-text=" Driven to reshape the world one innovation at a time "><p> Driven to reshape the world one innovation at a time </p></p></div>
-			<div class=imglinks>
-				<a aria-label="GitHub" href=https://github.com/Matp101>
-					<i class="fab fa-github fa-3x socialicons"></i>
-				</a>
-				<a aria-label="LinkedIn" href=https://www.linkedin.com/in/mathewpellarin>
-					<i class="fab fa-linkedin fa-3x socialicons"></i>
-				</a>
-				<a aria-label="Facebook" href=https://www.facebook.com/mathew.pellarin>
-					<i class="fab fa-facebook fa-3x socialicons"></i>
-				</a>
-				<a aria-label="Instagram" href=https://www.instagram.com/matp101>
-					<i class="fab fa-instagram fa-3x socialicons"></i>
-				</a>
-			</div>
-			<a class="btn btn-outline-light btn-lg" role=button aria-label="Learn more about me"
-				href="https://github.com/Matp101/resume" target="_blank">Resume</a>
-			<a class="btn btn-outline-light btn-lg" role=button aria-label="Contact"
-				href="mailto:mathewpellarin@hotmail.com" target="_blank">Contact</a>
-			<!--
-			<a target=_blank class="btn btn-outline-light btn-lg" role=button aria-label="New site" href="https://Mathew.work" style="margin-left: 10px;">My Site?</a>
-			-->
-			<div id="for-more" class="for-more btn btn-outline-light">
-				<div class="scroll">Scroll for more</div>
-				<div class="swipe">Swipe for more</div>
-			</div>
+				<h1 class=display-1>Mathew Pellarin</h1>
+				<div class="typisttext" id="typewriterText"
+					data-text=" Driven to reshape the world one innovation at a time ">
+					<p> Driven to reshape the world one innovation at a time </p>
+				</div>
+				<div class=imglinks>
+					<a aria-label="GitHub" href=https://github.com/Matp101>
+						<i class="fab fa-github fa-3x socialicons"></i>
+					</a>
+					<a aria-label="LinkedIn" href=https://www.linkedin.com/in/mathewpellarin>
+						<i class="fab fa-linkedin fa-3x socialicons"></i>
+					</a>
+					<a aria-label="Facebook" href=https://www.facebook.com/mathew.pellarin>
+						<i class="fab fa-facebook fa-3x socialicons"></i>
+					</a>
+					<a aria-label="Instagram" href=https://www.instagram.com/matp101>
+						<i class="fab fa-instagram fa-3x socialicons"></i>
+					</a>
+				</div>
+				<a class="btn btn-outline-light btn-lg" role=button aria-label="Learn more about me"
+					href="https://github.com/Matp101/resume" target="_blank">Resume</a>
+				<a class="btn btn-outline-light btn-lg" role=button aria-label="Contact"
+					href="mailto:mathewpellarin@hotmail.com" target="_blank">Contact</a>
+				<div id="for-more" class="for-more btn btn-outline-light">
+					<div class="scroll">Scroll for more</div>
+					<div class="swipe">Swipe for more</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section id="aboutme" class="aboutme">
-		<div id=aboutme class="container text-center">
-			<div class="row">
-				<div class="col-md-4 order-md-1 mb-3 mb-md-0">
-					<img src="images/mathewpellarin.png" alt="Mathew Pellarin" class="meimage">
-				</div>
-				<div class="col-md-8 order-md-2 aboutmep">
-					<h2>About Me</h2>
-					<p style="margin: 20px;">My name is Mathew Pellarin. I’m a undergraduate at the University of
-						Windsor studying Computer Science. I have also attended St. Clair College and graduated with a
-						Electronics Engineering Diploma. I am a passionate embedded systems enthusiast with a
-						knack for programming solutions that simplify everyday life. I have a diverse interest in
-						technology, and I am always looking for new opportunities to learn and grow.</p>
-				</div>
+		<div class="row container text-center">
+			<div class="col-md-4 order-md-1 mb-3 mb-md-0">
+				<img src="images/mathewpellarin.png" alt="Mathew Pellarin" class="meimage">
+			</div>
+			<div class="col-md-8 order-md-2 aboutmep">
+				<h2>About Me</h2>
+				<p style="margin: 20px;">My name is Mathew Pellarin. I’m a undergraduate at the University of
+					Windsor studying Computer Science. I have also attended St. Clair College and graduated with a
+					Electronics Engineering Diploma. I am a passionate embedded systems enthusiast with a
+					knack for programming solutions that simplify everyday life. I have a diverse interest in
+					technology, and I am always looking for new opportunities to learn and grow.</p>
 			</div>
 		</div>
 	</section>
 	<!-- -->
-
 	<section id="projects" class="container text-center">
+		<h2>Projects</h2>
 		<div id="project1">
 			<h3>Robotic Arm</h3>
-			<p>This robotic arm is a functional robot built using a Arduino Mega. It picks up a metal object when detected at the end of the conveyor belt and places it in a unloading spot.</p>
+			<img src="images/projects/RobotArm.png" alt="Robotic Arm" class="proj-img">
+			<p>This robotic arm is a functional robot built using a Arduino Mega. It picks up a metal object when
+				detected at the end of the conveyor belt and places it in a unloading spot.</p>
 			<a href="https://github.com/Matp101/RoboticArm/" style="color: blue;">More Information</a>
 		</div>
+		<br>
+		<hr>
 		<div id="project2">
 			<h3>Smart Blinds</h3>
-			<p>Uses a Stepper motor to control your blinds to open and close with 3 buttons. This also connects to MQTT to allow intigration with Home Assisatant and other automation softwares.</p>
+			<img src="images/projects/SmartBlinds.png" alt="Smart Blinds" class="proj-img">
+			<p>Uses a Stepper motor to control your blinds to open and close with 3 buttons. This also connects to MQTT
+				to allow intigration with Home Assisatant and other automation softwares.</p>
 			<a href="https://github.com/Matp101/SmartBlinds" style="color: blue;">More Information</a>
 		</div>
+		<br>
+		<hr>
 		<div id="project3">
 			<h3>Car Cluster Cloner</h3>
+			<img src="images/projects/CarClusterCloner.jpg" alt="Car Cluster Cloner" class="proj-img">
 			<p>Clones 93xC6 chips to another. This EEPROM chip stores key data and odometer values.</p>
 			<a href="https://github.com/Matp101/Car-Cluster-Cloner" style="color: blue;">More Information</a>
 		</div>
-
+		<br>
 	</section>
 	<!-- -->
 	<section id="skills" class="skills text-center">
@@ -114,22 +117,20 @@
 		<div class="wraper container">
 			<div class="skillscontainer">
 				<h3>Language Skills</h3>
-				<img alt="C Logo" src="images/skills/C_Logo.png" class="skilllogo"/>
-				<div class="skillbar"  style="width: 90%">90%</div>
-				<img alt="CPP Logo" src="images/skills/CPP_Logo.png" class="skilllogo"/>
+				<img alt="C Logo" src="images/skills/C_Logo.png" class="skilllogo">
+				<div class="skillbar" style="width: 90%">90%</div>
+				<img alt="CPP Logo" src="images/skills/CPP_Logo.png" class="skilllogo">
 				<div class="skillbar" style="width: 85%">85%</div>
-				<img alt="Python Logo" src="images/skills/Python_Logo.png" class="skilllogo"/>
+				<img alt="Python Logo" src="images/skills/Python_Logo.png" class="skilllogo">
 				<div class="skillbar" style="width: 85%">85%</div>
-				<img alt="ML Logo" src="images/skills/ML_Logo.png" class="skilllogo"/>
+				<img alt="ML Logo" src="images/skills/ML_Logo.png" class="skilllogo">
 				<div class="skillbar" style="width: 75%">75%</div>
-				<img alt="HTML Logo" src="images/skills/HTML_Logo.png" class="skilllogo"/>
+				<img alt="HTML Logo" src="images/skills/HTML_Logo.png" class="skilllogo">
 				<div class="skillbar" style="width: 60%">60%</div>
 			</div>
 		</div>
 	</section>
 	<!-- -->
-
-
 	<section id="experience" class="experience">
 		<div class="container text-center">
 			<h2>Experience</h2>
@@ -204,9 +205,7 @@
 			</div>
 		</div>
 	</section>
-
 	<!-- -->
-
 	<section id="contact" class="footer">
 		<div class="container text-center">
 			<h2>Get in Touch</h2>
