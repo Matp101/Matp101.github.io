@@ -1,0 +1,10 @@
+.d-flex {
+    display: flex !important;
+}
+
+.proj-img {
+    object-fit: contain;
+    width: 80%;
+    height: auto;
+    max-height: 350px;
+}

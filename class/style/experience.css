@@ -1,0 +1,55 @@
+table {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+
+td {
+    border-style: groove;
+    border-color: #ddd;
+    height: 250px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+hr {
+    min-height: 100%;
+    max-height: 100vh;
+    margin: 0;
+}
+
+.home {
+    min-height: 100%;
+    position: relative;
+    animation: bounce 0.5s infinite alternate;
+}
+
+.eduheader {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 200;
+}
+
+.edudetail {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin: 2px;
+}
+
+.work {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    background-color: #fff;
+    /* padding-top: 3rem; */
+    /* padding-bottom: 3rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
