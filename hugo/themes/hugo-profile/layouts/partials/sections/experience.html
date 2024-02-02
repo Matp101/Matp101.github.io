@@ -1,0 +1,78 @@
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-3">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab-experience" role="tablist">
+                        {{ range $index, $element := .Site.Params.experience.items }}
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link{{ if (eq $index 0) }} active{{ end }} bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='{{ printf "Experience-%s-%s-tab" (replace .company " " "-") (replace .date " " "-") }}'
+                                data-bs-target='#pills-{{ printf "Experience-%s-%s" (replace .company " " "-") (replace .date " " "-") }}'
+                                aria-controls='{{ printf "Experience-%s-%s" (replace .company " " "-") (replace .date " " "-") }}' 
+                            >
+                                {{ if .short_company }}
+                                {{ .short_company }}
+                                {{ else }}
+                                {{ .company }}
+                                {{ end }}
+                            </div>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent-experience">
+                        {{ range $index, $element := .Site.Params.experience.items }}
+                        <div 
+                            class="tab-pane fade{{ if (eq $index 0) }} show active{{ end }} bg-transparent" 
+                            role="tabpanel"
+                            id='pills-{{ printf "Experience-%s-%s" (replace .company " " "-") (replace .date " " "-") }}'
+                            aria-labelledby='{{ printf "Experience-%s-%s-tab" (replace .company " " "-") (replace .date " " "-") }}'
+                        >
+                            <div>
+                                <span class="h4">{{ .job }}</span>
+                                <small>-</small>
+                                <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                                <div class="pb-1">
+                                    <small>{{ .date }}</small>
+                                    {{ if .info.enable | default true }}
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title={{ .info.content | default (printf "Working as a %s at %s" .job .company ) }}
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    {{ end }}
+                                </div>
+
+                                {{ if .featuredLink.enable | default false }}
+                                <!-- Display nested featured links next to each other -->
+                                <div class="py-2 featuredLink">
+                                    {{ range .featuredLink.items }}
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm me-2" href={{ .url | default "#" }} target="_blank">
+                                        {{ .name | default "Featured Link" }} 
+                                    </a>
+                                    {{ end }}
+                                </div>
+                                {{ end }}
+                            </div>
+
+                            {{ .content | markdownify}}
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

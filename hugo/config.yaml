@@ -1,0 +1,553 @@
+baseURL: "https://matp101.github.io"
+languageCode: "en-us"
+title: "Matp101 Portfolio"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Mathp101"
+  description: My Portfolio
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/favicon.ico"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Mathew Pellarin" # Brand name for the brand | default is the title variable
+    disableSearch: True
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Mathew Pellarin"
+    subtitle: "I build things"
+    content: "I'm an enthusiastic student with a strong passion for technology. I specialize in embedded systems and love creating software solutions that simplify everyday life."
+    image: /images/me.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      #TODO:
+      url: "https://github.com/Matp101/resume/blob/main/Mathew_Pellarin_resume.pdf"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/matp101
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/mathewpellarin
+        - icon: fab fa-instagram
+          url: https://instagram.com/matp101
+        - icon: fab fa-facebook
+          url: https://facebook.com/mathew.pellarin
+        #- icon: fab fa-twitter
+        #  url: https://example.com
+      customIcons:
+        - icon: /favicon.ico
+          url: "https://matp101.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/mathewpellarin.png"
+    content: |-
+        My name is Mathew Pellarin. I’m an graduate at the University of Windsor from Computer Science. I have also attended St. Clair College and graduated with an Electronics Engineering Diploma. I am a passionate embedded systems enthusiast with a knack for programming solutions that simplify everyday life. I have a diverse interest in technology, and I am always looking for new opportunities to learn and grow.    
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "C/C++"
+        - "Python"
+        - "Machine Learning"
+        - "SQL"
+        - "Data Structures"
+        - "HTML/CSS"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Software Engineer"
+        company: "RIIS LLC"
+        companyUrl: "https://riis.com/"
+        date: "Jan 2024 - Present"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          - Advanced software development and optimization by employing efficient coding methodologies and integrating cutting-edge technologies.
+          - Worked collaboratively in a team setting to conceptualize, build, and rigorously test high-performing and scalable applications.
+          - Played a pivotal role throughout the entire software development lifecycle, encompassing requirement analysis, system architecture, deployment, and ongoing maintenance.
+          - Excelled in diagnosing and resolving complex technical issues, delivering innovative solutions to enhance system functionality and performance.
+
+      - job: "Researcher"
+        company: "BMS Lab"
+        companyUrl: "https://www.bmslab.org/get-involved"
+        date: "May 2022 - Present"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        featuredLink:
+          enable: true
+          items:
+            - name: "Wireless BMS"
+              url: "https://github.com/Matp101/WirelessBMS"
+            - name: "Daly BMS Logger"
+              url: "https://github.com/Matp101/DalyBMSLogger"
+            - name: "Cloud Database"
+              url: "https://github.com/Matp101/CloudDatabase"
+        content: |
+          - Led the creation of innovative testing methodologies for battery management systems, emphasizing both efficiency and precision, and significantly enhanced system integration for improved operational effectiveness.
+          - Pioneered the design and implementation of a cutting-edge wireless BMS using mesh network technology, bolstering communication and data reliability.
+          - Developed and implemented bespoke hardware and software solutions, automating data collection and analysis, thereby streamlining comprehensive testing processes.
+          - Collaborated effectively with a team of engineers and researchers, making substantial contributions to the evolution of battery technology and management practices.
+
+      - job: "Machinist"
+        company: "Ford"
+        companyUrl: "https://ford.com"
+        date: "Jun 2022 - Present"
+        featuredLink:
+          enable: false
+          items: 
+          - url: "https://ford.com"
+        info:
+          enable: true
+          content: I worked as a TPT for Ford.
+        content: |
+          - Operate and maintain machinery in automotive manufacturing while meeting production targets and maintaining high-quality standards.
+          - Perform machine setup, monitor operations, conduct quality checks on finished products
+          - Troubleshoot machine issues, perform routine maintenance and actively contribute to continuous improvement initiatives.
+
+      - job: "Teaching Assistant"
+        short_company: "U of Windsor"
+        company: "University of Windsor"
+        companyUrl: "https://www.uwindsor.ca/graduate-studies/473/gas-and-tas"
+        date: "Sept 2021 - Dec 2023"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        featuredLink:
+          enable: false
+          items: 
+          - url: "https://example.com"
+        content: |
+          - Support faculty members by effectively grading assignments, papers, and projects, providing valuable feedback to students.
+          - Handle student inquiries and emails promptly, offering guidance and clarification on course materials and assignments.
+          - Conduct office hours to provide one-on-one assistance, helping students understand course content and providing academic guidance.
+
+      - job: "Embeded Systems"
+        company: "Rapid Sewer Data"
+        companyUrl: "https://www.rapidsewerdata.com/"
+        date: "May 2022 - Dec 2022"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        featuredLink:
+          enable: True
+          items: 
+          - name: "Realtime Sewer Monitors"
+            url: "https://github.com/Matp101/RapidSewerData"
+        content: |
+          - Key contributor in the Realtime Sewer Monitors project, focused on tracking critical environmental factors in sewer systems using advanced monitoring technology.
+          - Engineered a multifunctional device for sewer monitoring, capable of measuring temperature, humidity, and water level, with real-time data transmission via cellular or Wi-Fi connections.
+          - Led the development of a data management solution involving MySQL and Apache PHP server for secure and efficient data upload, significantly reducing computational demand on the devices.
+          - Conducted extensive research and testing on various sensors for optimal performance in harsh sewer conditions, while driving the hardware selection process with an emphasis on modularity, waterproofing, and sensor precision.
+
+      - job: "Technology Associate"
+        company: "Staples"
+        companyUrl: "https://Staples.ca"
+        date: "Mar 2017 - Mar 2023"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        featuredLink:
+          enable: False
+          items: 
+          - url: "https://example.com"
+        content: |
+          - Support faculty members by effectively grading assignments, papers, and projects, providing valuable feedback to students.
+          - Handle student inquiries and emails promptly, offering guidance and clarification on course materials and assignments.
+          - Conduct office hours to provide one-on-one assistance, helping students understand course content and providing academic guidance.
+
+      - job: "Media and Resteration Technician"
+        short_company: "CH2A"
+        company: "Canadian Aviation Museum"
+        companyUrl: "https://canadianaviationmuseum.ca"
+        date: "Sept 2021 - July 2022"
+        info:
+          enable: false
+          content: I also worked as a Resteration Technician for the Lancaster Bomber.
+        featuredLink:
+          enable: False
+          items: 
+          - url: "https://canadianaviationmuseum.ca/"
+        content: |
+          - Set up and configured digital media and TV players, including the establishment of Xibo server, to deliver engaging and interactive content to visitors.
+          - Contributed to the restoration of historic aircraft, including the Lancaster bomber, ensuring meticulous attention to detail.
+          - Provided informative and engaging tours to visitors, sharing knowledge about the history and significance of the restored aircraft, captivating their interest and enhancing their overall experience.
+
+      - job: "Waiter"
+        company: " St Angela Hall"
+        companyUrl: "https://m.facebook.com/profile.php?id=2012043372375122"
+        date: "Jun 2010 - Aug 2020"
+        info:
+          enable: false
+          content: None
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          - Provide exceptional customer service by assisting customers with their technology needs, recommending suitable products, and ensuring a positive shopping experience.
+          - Utilize product knowledge and sales techniques to drive revenue and meet or exceed individual and team sales targets.
+          - Offer post-sales support, including product setup, troubleshooting, and coordinating warranty claims or repairs, to ensure customer satisfaction.
+
+
+  # Volunteer
+  volunteer:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Controls Advisor"
+        company: "First Robotics Competition"
+        companyUrl: "https://www.firstinspires.org/robotics/frc"
+        date: "May 2023 - Present"
+        info:
+          enable: false
+          content: I also worked as a Resteration Technician for the Lancaster Bomber.
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: |
+          - Provided immediate technical support and troubleshooting to student teams at robotics events, addressing both coding and hardware challenges to ensure optimal robot functionality.
+          - Offered mentorship in programming and hardware integration, playing a pivotal role in the seamless operation and performance of competition robots.
+          - Guided students through complex technical issues, contributing significantly to the optimization of their robots' performance in a competitive environment.
+
+      - job: "Referee"
+        company: "First Lego League"
+        companyUrl: "https://www.firstlegoleague.org/"
+        date: "October 2023 - Present"
+        info:
+          enable: false
+          content: I also worked as a Resteration Technician for the Lancaster Bomber.
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: |
+          - Enforced fair play and compliance with competition rules during First Lego League events, while evaluating team projects and robot designs, offering both constructive feedback and motivation to participants.
+          - Actively engaged with students to foster a keen interest in STEM, promoting collaboration and innovative thinking, and collaborated with fellow referees and organizers for the seamless execution of the competition.
+          - Played a crucial role in decision-making during matches, maintaining fair and impartial judgments in accordance with First Lego League standards, contributing to a positive and competitive event atmosphere.
+
+      - job: "Live Streaming"
+        short_company: "CCH"
+        company: "Catholic Central High School"
+        companyUrl: "https://www.wecdsb.on.ca/schools/catholiccentralhs"
+        date: "Sept 2013 - April 2017"
+        featuredLink:
+          enable: false
+          url: "https://ford.com"
+        info:
+          enable: false
+          content: None
+        content: |
+          - Led the technical execution of school event livestreaming, including basketball games, involving custom PC setup and Blackmagic hardware integration for high-quality broadcasts, while also ensuring seamless operation of audio-visual equipment across various events.
+          - Oversaw lighting management for school plays, enhancing theatrical performances with creative atmospheric and thematic lighting setups.
+          - Developed and administered a digital signage system using Xibo for dynamic display of rolling advertisements and announcements on school TVs.
+
+      - job: "Music Festival Volunteer"
+        company: " St Angela Parish"
+        companyUrl: "https://stangelamerici.ca/"
+        date: "Jun 2010 - Mar 2020"
+        info:
+          enable: false
+          content: None
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          - Actively involved in setting up and dismantling festival infrastructures, ensuring events were executed smoothly.
+          - Assisted in food service, providing an enjoyable dining experience for festival attendees.
+          - Moderated games and activities, engaging with participants and creating a fun and interactive environment.
+
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor's in Computer Science [Honours] with AI specialization [minor in Mathamatics, minor in Information Technology]"
+        school:
+          name: "University of Windsor, Ontario"
+          url: "https://future.uwindsor.ca/computer-science"
+        date: "Sept 2020 - Present"
+        GPA: "86.9%"
+        content: |-
+          - Developed expertise in various areas of computer science, including database systems, computer networks, artificial intelligence, and software engineering.
+          - Collaborated on team projects and participated in coding competitions to apply theoretical knowledge to real-world scenarios, honing problem-solving, analytical, and teamwork skills.
+          
+          ###### Extracurricular Activities
+            - Events Coordinator of Computer Science Society
+            - Treasurer of Robotic & Tech Club  
+            - Hosted University of Windsor's Programming Competition
+            - Helped Coordinate WinHacks 2024
+      - title: "Electronics Engineering Technology"
+        school:
+          name: "St. Clair College"
+          url: "https://www.stclaircollege.ca/programs/electronics-engineering-technology-industrial-automation"
+        date: "Sept 2017 - April 2020"
+        GPA: "3.875 out of 4.0"
+        content: |-
+          - Interpret and analyze electrical diagrams and schematics to understand industrial automation systems, ensuring compliance with standards and regulations.
+          - Program and configure Programmable Logic Controllers (PLCs) to control and automate industrial processes, troubleshooting and maintaining PLC programs as needed.
+        
+          ###### Projects Made
+          - Created a working robotic arm as a small scale model that represents manufacturing using an Arduino. 
+        featuredLink:
+          enable: true
+          name: "My academic record"
+          url: "/pdf/stclaireet.pdf"
+      - title: "High School"
+        school:
+          name: "Catholic Central High School"
+          url: "https://example.org"
+        date: "Sept 2013 - April 2017"
+        average: "79.259%"
+        content: |-
+          - Specialist High Skill Major (SHSM) in Information and Communications Technology
+        
+          ###### Awards
+          - Honour Roll in grade 9, 10 and 11
+          - Second Place in photography and photo editing across Windsor-Essex County
+          - St. Joseph's Award for outstanding community service
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: NASA Space Apps Hackathon 2nd Place Winner
+        content: Developed a product to allow users to connect with others on current projects within NASA.
+        url: https://www.spaceappschallenge.org/
+        image: /images/nasaapps.jpeg
+      - title: CS Games
+        content: Came first in emulators at CS Games competition in 2023.
+        url: "https://csgames.org/"
+        image: /images/csgames.jpg
+      - title: Deans List
+        content: I was on deans list every year while in post secondary.
+        url: https://www.uwindsor.ca/fahss/1246/deans-honour-roll
+        # image: /images/achievment.jpg      
+
+  # projects
+  projects:
+    enable: true
+    usegithubapi: true
+    githubusername: "matp101"
+    title: "GitHub Projects"
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        badges:
+          - "Django"
+          - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    # content: I'm currently looking for part-time Embedded Systems, Software Development or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me here 
+    content: If you have any questions, or if you just want to say hi, please feel free to email me here 
+    email: mathewpellarin@hotmail.com
+    btnName: Email Me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/matp101
+      linkedin: https://www.linkedin.com/in/mathewpellarin
+      #twitter: https://twitter.com
+      instagram: https://instagram.com/matp101
+      facebook: https://facebook.com/mathew.pellarin
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>

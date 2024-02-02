@@ -1,0 +1,9 @@
+name = "Hugo Profile"
+description = "A high performance and mobile first hugo template for personal portfolio and blog."
+demosite = "https://hugo-profile.netlify.app"
+tags = ["Responsive","Blog", "Portfolio", "Personal"]
+min_version = "0.68.0"
+
+[author]
+  name = "matp101"
+  homepage = "https://www.linkedin.com/in/mathewpellarin"
